@@ -1,0 +1,79 @@
+.container{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    /* background-image: url(""); */
+    background-image: url("https://sweep.ac.uk/wp-content/uploads/green-banner-light-900x281.jpg");
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    border-radius: 5px;  
+    text-align: justify;     
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;      
+    color: rgb(250, 255, 255);
+    margin-bottom: 15px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image{
+    height: 80px;
+    width: 90px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.title2{
+    font-size: 38px;
+}
+
+.description{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    .container{
+        padding: 5px;
+        padding-left: 10px;
+    padding-right: 10px;
+    }
+    
+    .image{
+        height: 50px;
+        width: 60px;
+        margin-right: 5px;
+    }
+    
+    .title{
+        font-size: 24px;
+        
+    }
+
+    .title2{
+        font-size: 24px;
+    }
+    
+    .description{
+        font-size: 14px;
+        margin-top: 5px;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+
+    }
+}
+

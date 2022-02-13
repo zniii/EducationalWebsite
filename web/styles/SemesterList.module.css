@@ -1,0 +1,65 @@
+.semesters_body{
+    gap: 10px;
+    padding-left: 120px;
+    padding-right: 120px;  
+    padding-bottom: 50px;
+    min-height: calc(100vh - 80px - 70px);
+}
+
+
+
+.table tbody tr td{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_title{
+    margin-top: 10px;
+    border-bottom: 2px solid lightgrey;
+}
+
+.semester_title{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.table_data{
+    font-size: 16px;
+}
+
+.option_btn{
+    border: 1px solid #a3a2a2;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.option_btn:hover{
+   color: white;
+   background: linear-gradient(
+    90deg
+    , #98ca2f 0%, #1a9b41 100%);
+    transform: scale(1.15);
+}
+
+
+
+@media (max-width: 600px) {
+    .semesters_body{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .semester_title{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    .table_data{
+        font-size: 14px;
+    }
+
+}
+
+

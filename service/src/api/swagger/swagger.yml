@@ -1,0 +1,88 @@
+openapi: 3.0.0
+info:
+  title: Pathsala.ListNepal
+  description: This is an internal project for ListNepal.
+  version: 0.0.1
+
+servers:
+  - url: http://pathasala.listnepal.com
+    description: This is the description for main server
+
+components:
+  schemas:
+    Affiliation:
+      properties:
+        id:
+          type: ObjectId
+          description: Auto generated Id
+        name:
+          type: String
+          description: Name of the affiliation
+        slug:
+          type: String
+          description: Slug of the affiliation
+        description:
+          type: String
+          description: Description of the affiliation
+        image:
+          type: String
+          description: URL of the image
+        status:
+          type: String
+          description: Status of the affiliation
+    Faculties:
+      properties:
+        id:
+          type: ObjectId
+          description: Auto generated id
+        name:
+          type: String
+          description: Name of the faculty
+        slug:
+          type: String
+          description: Slug of the faulty
+        description:
+          type: String
+          description: Description of the faculty
+        abbreviation:
+          type: String
+          description: Abbreviation of the faulty
+        affiliation:
+          type: ObjectId
+          description: Auto generated Id of affiliation
+        status:
+          type: String
+          description: Status of the faculty
+    Institutes:
+      properties:
+        id:
+          type: ObjectId
+          description: Auto generated id
+        name:
+          type: String
+          description: Name of the institute
+        slug:
+          type: String
+          description: Slug of the institute
+        description:
+          type: String
+          description: Description of the institute
+        address:
+          type: String
+          description: Address of the institute
+        affiliation:
+          type: ObjectId
+          description: Affiliation id of the institute
+        faculty:
+          type: Array
+          description: Faculty Ids of the institute
+        type:
+          type: String
+          description: Type of the institute
+        image:
+          type: String
+          description: Url of the institute image
+        status:
+          type: String
+          description: Status of the institute
+          

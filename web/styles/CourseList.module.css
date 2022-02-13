@@ -1,0 +1,44 @@
+.body{
+    gap: 10px;
+    padding-left: 120px;
+    padding-right: 120px;  
+    padding-bottom: 50px;
+    min-height: calc(100vh - 80px - 70px);
+}
+
+.courses_display{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.course_card{
+    flex: 0 20%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.header_title{
+    margin-top: 10px;
+    border-bottom: 2px solid lightgrey;
+}
+
+
+@media (max-width: 600px) {
+    .body{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 600px )and (max-width: 770px ){
+    .body{
+        padding-left: 50px;
+        padding-right: 50px;  
+    }
+
+    
+}
